@@ -36,7 +36,7 @@
 	[self.window.rootViewController.view addSubview:webView];
 	[webView loadRequest:[NSURLRequest requestWithURL:video]];
 	
-	
+//	NSLog(@"web view: %@, video: %@", webView, video);
 //	self.window.rootViewController = viewController;
 	
 	return YES;
