@@ -1,0 +1,9 @@
+Package: com.monolith.LandscapeVideos
+Name: Landscape Videos
+Depends: com.johncoates.monolith (>= 0.03), mobilesubstrate, firmware (>> 8.0)
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Always plays videos in landscape.
+Maintainer: John Coates
+Author: John Coates
+Section: Tweaks

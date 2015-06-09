@@ -1,0 +1,9 @@
+//
+//  TweakPrefixHeader.pch
+//  ObjectiveC Tweak
+//
+//  Created by John Coates on 6/8/15.
+//  Copyright (c) 2015 John Coates. All rights reserved.
+//
+
+#import <Monolith/Monolith.h>
