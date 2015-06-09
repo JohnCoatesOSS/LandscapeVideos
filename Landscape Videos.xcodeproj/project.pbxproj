@@ -18,11 +18,15 @@
 		8E3162D51B269B0100FB761E /* testVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8E3162D41B269B0100FB761E /* testVideo.mov */; };
 		8E3162D71B269B7400FB761E /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3162D61B269B7400FB761E /* AVKit.framework */; };
 		8E3162D91B269BF000FB761E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3162D81B269BF000FB761E /* AVFoundation.framework */; };
-		8E3162DA1B269D0300FB761E /* LSVHooks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63FD5F1AF0394C00B2E569 /* LSVHooks.m */; };
 		8E3162DB1B269D1600FB761E /* Monolith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD725CD1B1D07CC0032E880 /* Monolith.framework */; };
 		8E3162DC1B269D1600FB761E /* Monolith.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAD725CD1B1D07CC0032E880 /* Monolith.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E3162DF1B269E7700FB761E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3162DE1B269E7700FB761E /* MediaPlayer.framework */; };
 		8E3162E11B26A0F900FB761E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3162E01B26A0F900FB761E /* WebKit.framework */; };
+		8E3162E41B26BC8100FB761E /* LSVOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3162E21B26BC8100FB761E /* LSVOrientation.h */; };
+		8E3162E51B26BC8100FB761E /* LSVOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3162E31B26BC8100FB761E /* LSVOrientation.m */; };
+		8E3162E71B26BE3800FB761E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3162E61B26BE3800FB761E /* CoreMotion.framework */; };
+		8E3162E81B26C1D100FB761E /* LSVHooks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63FD5F1AF0394C00B2E569 /* LSVHooks.m */; };
+		8E3162E91B26C1D400FB761E /* LSVOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3162E31B26BC8100FB761E /* LSVOrientation.m */; };
 		8E63FD451AF038A500B2E569 /* Tweak.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E63FD441AF038A500B2E569 /* Tweak.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E63FD611AF0394C00B2E569 /* LSVHooks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E63FD5F1AF0394C00B2E569 /* LSVHooks.m */; };
 		FAD725CE1B1D07CC0032E880 /* Monolith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD725CD1B1D07CC0032E880 /* Monolith.framework */; };
@@ -61,6 +65,9 @@
 		8E3162D81B269BF000FB761E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8E3162DE1B269E7700FB761E /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		8E3162E01B26A0F900FB761E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8E3162E21B26BC8100FB761E /* LSVOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSVOrientation.h; sourceTree = "<group>"; };
+		8E3162E31B26BC8100FB761E /* LSVOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSVOrientation.m; sourceTree = "<group>"; };
+		8E3162E61B26BE3800FB761E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8E63FD3F1AF038A500B2E569 /* Landscape Videos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Landscape Videos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E63FD431AF038A500B2E569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E63FD441AF038A500B2E569 /* Tweak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tweak.h; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E3162E71B26BE3800FB761E /* CoreMotion.framework in Frameworks */,
 				FAD725CE1B1D07CC0032E880 /* Monolith.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +112,7 @@
 		8E315F651B263B2C00FB761E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E3162E61B26BE3800FB761E /* CoreMotion.framework */,
 				8E3162E01B26A0F900FB761E /* WebKit.framework */,
 				8E3162DE1B269E7700FB761E /* MediaPlayer.framework */,
 				8E3162D81B269BF000FB761E /* AVFoundation.framework */,
@@ -165,6 +174,8 @@
 				8E63FD441AF038A500B2E569 /* Tweak.h */,
 				8E315F641B263A6300FB761E /* TweakPrefixHeader.pch */,
 				8E63FD421AF038A500B2E569 /* Supporting Files */,
+				8E3162E21B26BC8100FB761E /* LSVOrientation.h */,
+				8E3162E31B26BC8100FB761E /* LSVOrientation.m */,
 			);
 			path = "ObjectiveC Tweak";
 			sourceTree = "<group>";
@@ -193,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E315F611B263A0B00FB761E /* LSVPlugin.h in Headers */,
+				8E3162E41B26BC8100FB761E /* LSVOrientation.h in Headers */,
 				8E63FD451AF038A500B2E569 /* Tweak.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,8 +333,9 @@
 			files = (
 				8E3162B91B2699D200FB761E /* ViewController.m in Sources */,
 				8E3162B61B2699D200FB761E /* AppDelegate.m in Sources */,
-				8E3162DA1B269D0300FB761E /* LSVHooks.m in Sources */,
+				8E3162E81B26C1D100FB761E /* LSVHooks.m in Sources */,
 				8E3162B31B2699D200FB761E /* main.m in Sources */,
+				8E3162E91B26C1D400FB761E /* LSVOrientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +345,7 @@
 			files = (
 				8E63FD611AF0394C00B2E569 /* LSVHooks.m in Sources */,
 				8E315F621B263A0B00FB761E /* LSVPlugin.m in Sources */,
+				8E3162E51B26BC8100FB761E /* LSVOrientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
